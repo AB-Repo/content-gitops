@@ -13,8 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Set up Python 3.7
-      env:
-        ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: 'true'
       uses: actions/setup-python@v1
       with:
         python-version: 3.7
