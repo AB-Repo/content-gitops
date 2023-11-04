@@ -23,6 +23,6 @@ jobs:
     - name: Build & Push Image
       run: |
         cd ./python
-        echo $secrets.DOCKERPW | docker login -u jupitersmoons --password-stdin
+        echo $DOCKERPW | docker login -u jupitersmoons --password-stdin
         # docker image build -t jupitersmoons/gitops:hellov1.0 .
         # docker push jupitersmoons/gitops:hellov1.0
